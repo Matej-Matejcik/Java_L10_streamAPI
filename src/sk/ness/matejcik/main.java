@@ -22,6 +22,7 @@ public class main {
         // EXERCISE 2
         System.out.println("\n\n2.\tUsing Java Stream API print first 100 even numbers that are not dividable by 8");
         IntStream.range(1,101)
+                .filter(x -> x % 2 == 0)
                 .filter(x -> x % 8 != 0)
                 .forEach(x -> System.out.print(x + ", "));
         // ***************************************************************
